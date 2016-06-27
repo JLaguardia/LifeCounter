@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LifeCounter</string>
+    <string-array name="settings_items">
+        <item>Add Player</item>
+        <item>Toggle Orientation</item>
+        <item>Reset</item>
+        <item>About/Credits</item>
+    </string-array>
+</resources>

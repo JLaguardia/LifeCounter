@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/player_overlay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColor="#223389"
+        android:text="Player"
+        android:textIsSelectable="true"
+        android:textSize="35sp" />
+
+    <RelativeLayout
+        android:id="@+id/control_overlay_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/life_counter_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#223389"
+            android:text="40"
+            android:textSize="150sp"
+            android:layout_centerInParent="true" />
+
+        <ImageButton
+            android:id="@+id/neg_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/minus"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/life_counter_label"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/pos_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/life_counter_label" />
+    </RelativeLayout>
+</LinearLayout>
